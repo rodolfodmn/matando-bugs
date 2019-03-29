@@ -1,0 +1,25 @@
+Problema:
+    clientes não recebem email das notas fiscais e dos códigos de rastreio.
+
+Tentativas:
+    nos testes não foi possível simular o erro
+
+Soluções:
+    intalação do log de email na loja.
+
+Possibilidades:
+    envio do email sendo feito antes do pedido ter o rastreio enviado pela alteranativa.
+
+Infos:
+    o lojista envia o rastreio pelo o erp dele.
+    a notificação de entrega é feita pela Alternativa.
+    koike informou que nunca era enviado link para rastreio por email isso é orçado
+    koike mostra um print com o código de rastreio, sem link, mas com código, o lojista manda um outro sem.
+    koike manda que o codigo de rastreio deve ser informado antes do envio do email pra ir no mesmo.
+
+Exemplos:
+    220011768 pedido que não foi enviado email com código de rastreio
+    220011887 algo com o envia da nota fiscal 
+
+Resumo:
+    o ticket veio com a reclamação deque os clientes não estavam recebendo email com as informações de nfe e rastreio. Analisando melhor vi que já tentaram resolver isso, mas não conseguiram simular o erro, ou seja acredito que isso deva funcionar, então instalaram um log de email na loja para acompanhar. Também tem a informação de que o rastreio é enviado pela Alternativa que eu acredito ser o erp deles, pelo que eu sei a alteranativa só usa a api, ou seja a o pedido recebe o rastreio pela api, então provavelmente o email esta sendo enviado antes desse envio do rastreio. 
